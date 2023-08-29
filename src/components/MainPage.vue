@@ -1,7 +1,7 @@
 <template>
   <el-container>
       <el-aside width="200px">
-          <navi/>
+          <Sidebar/>
       </el-aside>
       <el-container>
           <el-header>Header</el-header>
@@ -11,17 +11,29 @@
 </template>
 
 <script>
-import Navi from './Navi.vue'
+import Sidebar from './Sidebar.vue'
 export default {
   data(){
       return{}
   },
   components:{
-      Navi
+    Sidebar
   }
 }
 </script>
 
 <style>
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
+.el-container{
+    height: 100%;
+}
+
+.el-aside::-webkit-scrollbar{
+    display: none;
+}
 </style>
