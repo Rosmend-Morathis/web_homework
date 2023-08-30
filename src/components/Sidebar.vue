@@ -58,21 +58,21 @@
   </div>
 </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        activeMenu: 'home',
-      };
+<script>
+export default {
+  data() {
+    return {
+      activeMenu: 'home',
+    };
+  },
+  methods: {
+    handleMenuSelect(index) {
+      this.activeMenu = index;
+      // 在这里可以根据index进行路由跳转或其他操作
     },
-    methods: {
-      handleMenuSelect(index) {
-        this.activeMenu = index;
-        // 在这里可以根据index进行路由跳转或其他操作
-      },
-    },
-  };
-  </script>
+  },
+};
+</script>
   
 <style scoped>
 
