@@ -53,4 +53,8 @@ html, body{
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     font-size: 14px;
 }
+
+.el-table th.gutter{
+    display: table-cell!important;
+  }
 </style>

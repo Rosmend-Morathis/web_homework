@@ -28,4 +28,8 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.el-table th.gutter{
+  display: table-cell!important;
+}
 </style>

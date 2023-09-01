@@ -43,7 +43,13 @@
                 </el-col>
             </el-row>  
         </div>
-        
+        <div class="device_list">
+            <el-table :data="devices" style="width: 100%;">
+                <el-table-column prop="name" label="房间" width="410"/>
+                <el-table-column prop="number" label="房号" width="400"/>
+                <el-table-column prop="status" label="状态" width="400"/>
+            </el-table>
+        </div>
     </div>
 </template>
 
@@ -67,6 +73,74 @@ const status = [
     },
 ]
 
+const devices = [
+    {
+        name: 'xxx室',
+        number: 'A101',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A102',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A103',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A104',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A105',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A106',
+        status: '在线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A201',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A202',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A203',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A101',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A204',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A205',
+        status: '离线',
+    },
+    {
+        name: 'xxx室',
+        number: 'A206',
+        status: '离线',
+    }
+]
+
 </script>
 
 <style scoped>
@@ -80,7 +154,15 @@ const status = [
     margin-top: 10px;
     padding: 5px;
     font-size: 14px;
+}
 
+.device_list{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.el-table th.gutter{
+    display: table-cell!important;
 }
 
 </style>
